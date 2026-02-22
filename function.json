@@ -7,43 +7,10 @@
   ],
   "tasks": [
     {
-      "type": "placeholder.vector.function",
-      "input_schema": {
-        "type": "array",
-        "description": "An array of cat photos to be ranked",
-        "minItems": 2,
-        "maxItems": 100,
-        "items": {
-          "type": "object",
-          "description": "A cat photo with its URL and optional metadata",
-          "properties": {
-            "url": {
-              "type": "string",
-              "description": "The URL or file path to the cat photo image"
-            },
-            "title": {
-              "type": "string",
-              "description": "An optional title or label for the photo"
-            },
-            "photographer": {
-              "type": "string",
-              "description": "An optional credit to the photographer"
-            }
-          },
-          "required": [
-            "url"
-          ]
-        }
-      },
-      "output_length": {
-        "$starlark": "len(input)"
-      },
-      "input_split": {
-        "$starlark": "[[photo] for photo in input]"
-      },
-      "input_merge": {
-        "$starlark": "[photo for subarray in input for photo in subarray]"
-      },
+      "type": "vector.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "score-cat-authenticity",
+      "commit": "7d95df93206c693c22b458abeff50683145b8ebe",
       "input": {
         "$starlark": "input"
       },

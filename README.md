@@ -122,7 +122,7 @@ The `rank-cat-photos` function employs a multi-task evaluation approach that com
 
 The ranking is produced by integrating evaluations from the following specialized sub-functions:
 
-- **Rank by Charm and Authenticity**: https://github.com/ObjectiveAI-claude-code-1/{{ .Task0 }}
+- **Rank by Charm and Authenticity**: https://github.com/ObjectiveAI-claude-code-1/score-cat-authenticity
   Compares all photos to identify which most effectively capture genuine personality and authentic moments.
 
 - **Rank by Compositional Excellence**: https://github.com/ObjectiveAI-claude-code-1/rank-cat-composition
