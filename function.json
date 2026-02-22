@@ -1,41 +1,10 @@
 {
   "type": "vector.function",
-  "input_schema": {
-    "type": "array",
-    "description": "An array of cat photos to be ranked",
-    "minItems": 2,
-    "maxItems": 100,
-    "items": {
-      "type": "object",
-      "description": "A cat photo with its URL and optional metadata",
-      "properties": {
-        "url": {
-          "type": "string",
-          "description": "The URL or file path to the cat photo image"
-        },
-        "title": {
-          "type": "string",
-          "description": "An optional title or label for the photo"
-        },
-        "photographer": {
-          "type": "string",
-          "description": "An optional credit to the photographer"
-        }
-      },
-      "required": [
-        "url"
-      ]
+  "input_maps": [
+    {
+      "$starlark": "[photo for photo in input]"
     }
-  },
-  "output_length": {
-    "$starlark": "len(input)"
-  },
-  "input_split": {
-    "$starlark": "[[photo] for photo in input]"
-  },
-  "input_merge": {
-    "$starlark": "[photo for subarray in input for photo in subarray]"
-  },
+  ],
   "tasks": [
     {
       "type": "placeholder.vector.function",
@@ -83,43 +52,10 @@
       }
     },
     {
-      "type": "placeholder.vector.function",
-      "input_schema": {
-        "type": "array",
-        "description": "An array of cat photos to be ranked",
-        "minItems": 2,
-        "maxItems": 100,
-        "items": {
-          "type": "object",
-          "description": "A cat photo with its URL and optional metadata",
-          "properties": {
-            "url": {
-              "type": "string",
-              "description": "The URL or file path to the cat photo image"
-            },
-            "title": {
-              "type": "string",
-              "description": "An optional title or label for the photo"
-            },
-            "photographer": {
-              "type": "string",
-              "description": "An optional credit to the photographer"
-            }
-          },
-          "required": [
-            "url"
-          ]
-        }
-      },
-      "output_length": {
-        "$starlark": "len(input)"
-      },
-      "input_split": {
-        "$starlark": "[[photo] for photo in input]"
-      },
-      "input_merge": {
-        "$starlark": "[photo for subarray in input for photo in subarray]"
-      },
+      "type": "vector.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "rank-cat-composition",
+      "commit": "f51301224791b54f536eae3aa5c86e20df77112f",
       "input": {
         "$starlark": "input"
       },
@@ -128,28 +64,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "object",
-        "description": "A single cat photo with its URL and optional metadata",
-        "properties": {
-          "url": {
-            "type": "string",
-            "description": "The URL or file path to the cat photo image"
-          },
-          "title": {
-            "type": "string",
-            "description": "An optional title or label for the photo"
-          },
-          "photographer": {
-            "type": "string",
-            "description": "An optional credit to the photographer"
-          }
-        },
-        "required": [
-          "url"
-        ]
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "score-cat-photo-quality",
+      "commit": "5b6972648593c9fb198faf6814dd0e4b0031722e",
       "map": 0,
       "input": {
         "$starlark": "map"
@@ -159,10 +77,41 @@
       }
     }
   ],
-  "input_maps": [
-    {
-      "$starlark": "[photo for photo in input]"
+  "input_split": {
+    "$starlark": "[[photo] for photo in input]"
+  },
+  "input_merge": {
+    "$starlark": "[photo for subarray in input for photo in subarray]"
+  },
+  "description": "The rank-cat-photos function evaluates and ranks cat photographs based on charm, composition, technical quality, and authenticity. By analyzing genuine personality, artistic framing, technical clarity, and authentic moments, this function produces a ranked list that identifies the most exceptional cat photographs across all evaluated dimensions.",
+  "input_schema": {
+    "type": "array",
+    "description": "An array of cat photos to be ranked",
+    "minItems": 2,
+    "maxItems": 100,
+    "items": {
+      "type": "object",
+      "description": "A cat photo with its URL and optional metadata",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "The URL or file path to the cat photo image"
+        },
+        "title": {
+          "type": "string",
+          "description": "An optional title or label for the photo"
+        },
+        "photographer": {
+          "type": "string",
+          "description": "An optional credit to the photographer"
+        }
+      },
+      "required": [
+        "url"
+      ]
     }
-  ],
-  "description": "The rank-cat-photos function evaluates and ranks cat photographs based on charm, composition, technical quality, and authenticity. By analyzing genuine personality, artistic framing, technical clarity, and authentic moments, this function produces a ranked list that identifies the most exceptional cat photographs across all evaluated dimensions."
+  },
+  "output_length": {
+    "$starlark": "len(input)"
+  }
 }
