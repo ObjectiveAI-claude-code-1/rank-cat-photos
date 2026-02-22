@@ -1,0 +1,14 @@
+[
+  {
+    "spec": "Rank cat photos by charm and authenticity. Determine which photos most effectively display genuine personality, emotional resonance, and natural, unforced moments that reveal the cat's true character. Evaluate whether each photo captures authentic feline behavior and creates a connection with the viewer, or whether it feels staged and artificial. Photos showing real moments of affection, playfulness, curiosity, or characteristic behavior should rank higher than those with awkward or posed expressions.",
+    "token": "e984acff-2a3d-46fc-8826-4673d5b9a234"
+  },
+  {
+    "spec": "Rank cat photos by compositional excellence. Evaluate which photos demonstrate superior artistic choices in framing, angle selection, visual balance, and use of space. Assess whether the photographer has positioned the cat meaningfully within the frame, whether the background complements or distracts from the subject, and whether the overall arrangement suggests intentional creative vision. Photos with thoughtful, purposeful composition should rank higher than those with careless or haphazard arrangement.",
+    "token": "84dd1f04-451b-4a8b-8407-a0dae7e84999"
+  },
+  {
+    "spec": "Score each individual cat photo for technical quality and visual clarity. Evaluate sharpness and focus on the cat, appropriateness and quality of lighting that reveals detail and texture, clarity of fine details, and accuracy of color reproduction. A technically sound photograph that is in focus with good lighting allows the viewer to fully appreciate the subject. Photos with poor focus, inadequate lighting, unclear details, or color inaccuracy should receive lower scores.",
+    "token": "a2692aac-55ac-4719-8495-1091dbddc295"
+  }
+]

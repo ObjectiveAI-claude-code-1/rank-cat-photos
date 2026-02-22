@@ -1,0 +1,19 @@
+The Art of Ranking Cat Photos: A Philosophy of Feline Photography
+
+In our increasingly visual world, we are overwhelmed with photographs. Yet among the billions of images captured daily, there exists a particularly cherished category: photos of cats. These images bring joy, amusement, and comfort to countless people across cultures and continents. The challenge, however, is not in capturing cat photos—it is in recognizing which photographs truly excel and deserve prominence.
+
+The rank-cat-photos function exists to solve this problem. Its purpose is to evaluate multiple cat photographs and arrange them in order of quality and merit, allowing the best images to rise to the top. Rather than relying on simple metrics like file size or upload date, this function will examine the deeper qualities that make a cat photo genuinely excellent.
+
+This function accepts as input a collection of photographs, each containing one or more cats. The output is a ranking that orders these photos from most to least exemplary. The practical applications are numerous: a social media platform might use this function to curate the best cat photos for its homepage, a photography competition might employ it to identify top submissions, or a news organization might use it to select the most captivating cat image to accompany a story. Even casual cat lovers might use it to organize their personal photo library, ensuring their favorite moments are easily discoverable.
+
+To properly rank these photographs, we must identify the qualities that distinguish an exceptional cat photo from a merely adequate one. Four core values guide this evaluation:
+
+**Genuine Charm**: The photograph captures something authentic and endearing about the cat—a moment of personality, playfulness, or emotional resonance. This is not about physical attractiveness alone, but about the intangible quality that makes us smile or feel connected to the subject. A cat mid-yawn, engaged in play, or showing genuine affection carries more weight than a blank stare or indifferent pose. Charm is the soul of a photograph.
+
+**Compositional Excellence**: The photographer has made thoughtful choices about framing, angle, and visual balance. The cat is positioned meaningfully within the frame, whether centered for impact or placed thoughtfully following artistic principles. The background complements rather than distracts. The use of space and negative space suggests intentional creative vision, not accidental photography.
+
+**Visual Clarity**: The image is technically sound with sharp focus on the cat, appropriate lighting that reveals detail and texture, and accurate color reproduction. While artistic filters and stylized approaches have their place, the fundamental clarity of the image—the ability to see the subject clearly—remains essential. A blurry cat photo, no matter how charming, loses its power.
+
+**Authentic Moment**: The photograph captures a genuine slice of feline life rather than a forced or overly staged pose. Cats are creatures of spontaneity and humor; photographs that honor this nature often resonate most powerfully. An unguarded moment of curiosity, rest, or natural behavior tells a truer story than a cat awkwardly positioned for the camera.
+
+These four pillars—Charm, Composition, Clarity, and Authenticity—form the foundation upon which the rank-cat-photos function operates. Together, they reflect a philosophy that respects both the art of photography and the dignity of the cats being photographed. The function seeks not merely to identify acceptable images, but to celebrate the photographs that move us, make us laugh, and remind us why cats have captured human hearts for millennia.
